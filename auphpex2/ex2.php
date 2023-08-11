@@ -12,6 +12,7 @@
             display: flex;
             justify-content: space-around;
         }
+
         .show {
             text-transform: uppercase;
             text-align: center;
@@ -20,6 +21,7 @@
             color: white;
             font-weight: 700;
         }
+
         .show2 {
             text-transform: uppercase;
             text-align: center;
@@ -111,10 +113,10 @@
     );
     ?>
     <?php
-        echo '<div class="show">Sản phẩm nổi bật</div>';
-        echo '<div class="show1">';
-            foreach ($products['impression'] as $key => $product) {
-                echo '
+    echo '<div class="show">Sản phẩm nổi bật</div>';
+    echo '<div class="show1">';
+    foreach ($products['impression'] as $key => $product) {
+        echo '
                     <div class="card" style="width: 18rem;">
                         <img src="' . $product['img'] . '" alt="">
                         <div class="card-body">
@@ -123,14 +125,14 @@
                         </div>
                     </div>
                 ';
-            }
-        echo '</div>';
+    }
+    echo '</div>';
 
 
-        echo '<div class="show2">Sản phẩm mới nhất</div>';
-        echo '<div class="show1">';
-            foreach($products['new'] as $key => $product) {
-                echo '
+    echo '<div class="show2">Sản phẩm mới nhất</div>';
+    echo '<div class="show1">';
+    foreach ($products['new'] as $key => $product) {
+        echo '
                     <div class="card" style="width: 18rem;">
                         <img src="' . $product['img'] . '" alt="">
                         <div class="card-body">
@@ -139,8 +141,8 @@
                         </div>
                     </div>
                 ';
-            }
-        echo '</div>';
+    }
+    echo '</div>';
 
     ?>
 </body>
